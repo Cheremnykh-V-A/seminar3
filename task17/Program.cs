@@ -1,10 +1,15 @@
 ﻿
+int ReadNumber (string messageToUser)
+{
+     Console.WriteLine(messageToUser);
+    int value = Convert.ToInt32(Console.ReadLine());
+    return value;
+}
 
-Console.WriteLine("Введите координаты Х");
-int x = Convert.ToInt32(Console.ReadLine());
 
-Console.WriteLine("Введите координаты Y");
-int y = Convert.ToInt32(Console.ReadLine());
+int x = ReadNumber("Введите координаты Х");
+
+int y = ReadNumber("Введите координаты Y");
 
 if(x > 0 && y > 0)
 {
